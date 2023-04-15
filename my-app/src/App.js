@@ -9,8 +9,9 @@ function App() {
     <section className="booklist">
       <EventExample />
       {bookArray.map((book, index) => {
-        const { img, title, author } = book;
-        return <Book key={index} img={img} title={title} author={author} />;
+        const { img, title, author, id } = book;
+
+        return <Book key={index} img={img} title={title} author={author} number={id} />;
       })}
     </section>
   );

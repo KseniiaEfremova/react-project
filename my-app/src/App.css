@@ -23,15 +23,29 @@ body {
   gap: 2rem;
 }
 
+
+
+.book {
+  display: flex;
+}
+
+
+.book div span {
+  color: whitesmoke;
+  background: #c45500;
+  padding: 0 10px;
+}
+
+
 .book img {
   width: 100%;
   object-fit: cover;
+  padding: 1rem 3rem 1rem 0;
 }
 
 .book {
   background-color: #fff;
   border-radius: 10px;
-  padding: 5rem;
   text-align: center;
 }
 
@@ -40,8 +54,6 @@ body {
   font-size: 1rem;
 }
 
-/* This won't work, because we already have an
-color style being applied using inline CSS, using JSX */
 .book h4 {
   color: red;
 }
